@@ -87,7 +87,7 @@ header {
   font-size: 20px;
   border-radius: 10px;
   width: 100%;
-  max-width: 60%;
+  max-width: 90%;
   height: 100%;
   max-height: 40px;
   border: 2px solid #166534;
@@ -144,9 +144,9 @@ header {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   margin-bottom: 5px;
-  margin-left: 10%;
+  margin-left: 5%;
   width: 100%;
-  max-width: 80%;
+  max-width: 90%;
   height: 100%;
   white-space: nowrap;
   color: white;
@@ -363,7 +363,7 @@ button:hover {
   background-color: #2f0d39;
   display: flex;
   padding: 10px;
-  display: flex;
+  display: none;
   flex-direction: column;
   overflow: auto;
   
@@ -529,7 +529,7 @@ button:hover {
   }
   
   .marcador-sorvete {
-    max-width: 40%;
+    max-width: 30%;
     margin: auto;
   }
   
@@ -538,8 +538,8 @@ button:hover {
   }
   
   .pedir {
-    min-width: 90px;
-    max-width: 90px;
+    min-width: 50%;
+    max-width: 50%;
     margin: auto;
     margin-bottom: 4px;
   }
