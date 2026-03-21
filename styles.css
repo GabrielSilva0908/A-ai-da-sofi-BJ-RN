@@ -341,7 +341,7 @@ header {
   cursor: pointer;
 }
 
-button:hover {
+.pedir:hover {
   background: linear-gradient(to right, #22c55e, #16a34a);
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -372,6 +372,7 @@ button:hover {
 .cabecalho-mini {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   background-color: none;
   width: 100%;
@@ -413,49 +414,94 @@ button:hover {
   width: 100%;
   height: 100%;
   font-size: 20px;
+  border: 1px solid black;
 }
 
-.tabelas-total {
+.Titulo-Tela {
+  background-color: #341040;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  width: 50%;
-  
+  text-align: center;
+  align-items: center;
+  padding: 30px;
 }
 
-.product {
+.tela {
+  font-family: "Poppins", sans-serif;
+  padding: 50px;
+  display: none;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
   background: linear-gradient(to right, #4ade80, #6ee7b7);
   background-size: 400% 400%;
   border: 2px solid #166534;
-  width: 70%;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.product img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-}
-
-.titulo-tabela {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  color: #2f0d39;
+.tela.ativa {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 10px;
+  width: 90%;
+  margin-left: 5%;
+  
 }
 
-.product p {
-  font-family: "Fredoka", sans-serif;
+.titulo-quantidade {
+  text-align: center;
   color: #2f0d39;
-  margin-bottom: 20px;
-  font-weight: 800;
 }
 
-.button {
-  color: #ffffff;
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="number"] {
+  margin-right: 5px;
+  padding: 10px;
+}
+
+.area-quantidade {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5px;
+  gap: 10px;
+}
+
+.borda-botao-avancar {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.borda-pedirq {
+  width: 100%;
+  height: 100%;
+}
+
+.pedir-quantidade {
+  width: 300px;
+  height: 40px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2f0d39;
+}
+
+.avancar-tela {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 30px;
   background-image: linear-gradient(to bottom,
       #e73392,
       #e64b8f,
@@ -464,47 +510,89 @@ button:hover {
       #f37785);
   background-attachment: fixed;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  border: none;
   border-radius: 5px;
-  cursor: pointer;
+  border: 1px solid white;
+  color: white;
 }
 
-.button:hover {
-  background-color: #2980b9;
+.avancar-tela:hover {
+  background: linear-gradient(to right, #e73392,
+      #e64b8f,
+      #ea5c8c,
+      #f06a88,
+      #f37785);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 
-.separador-tabela {
-  margin-top: 20px;
+.caixa-finalizar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.finalizar {
+  width: 100%;
+  display: none;
+  
+}
+
+.b-f {
+  width: 150px;
+  height: 50px;
+  background-image: linear-gradient(to bottom,
+      #e73392,
+      #e64b8f,
+      #ea5c8c,
+      #f06a88,
+      #f37785);
+  background-attachment: fixed;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+}
+
+.b-f:hover {
+  background: linear-gradient(to right, #e73392,
+      #e64b8f,
+      #ea5c8c,
+      #f06a88,
+      #f37785);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quantidade-ml {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  color: #2f0d39;
+  font-weight: 500;
+  gap: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-@keyframes quicar {
-  0% {
-    transform: translateY(0);
-  }
+.Centralizando-creme {
+  display: flex;
+  color: #2f0d39;
+  gap: 50px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.centralizando-acom {
+  display: flex;
+  color: #2f0d39;
+  gap: 50px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
   
-  50% {
-    transform: translateY(-10px);
-  }
-  
-  100% {
-    transform: translateY(0);
-  }
 }
-
-.quicar {
-  animation: quicar 2s infinite;
-}
-
-
-
-
 
 @media (orientation: landscape) {
   

@@ -61,17 +61,17 @@
       <h3 class="titulo-creme">Cremes</h3>
       <div class="lista-creme">
         <ul>
-          <li class="sabor">NINHO</li>
-          <li>NINHO TRUFADO</li>
-          <li>OVOMALTINE</li>
-          <li>OREO</li>
-          <li>COOKIES</li>
-          <li>MORANGO</li>
-          <li>MARACUJÁ</li>
-          <li>KIWI</li>
-          <li>ABACAXI SUÍÇO</li>
-          <li>AMENDOIN</li>
-          <li>TAPIOCA</li>
+          <li>Ninho</li>
+          <li>Ninho Trufado</li>
+          <li>OvoMaltine</li>
+          <li>Oreo</li>
+          <li>Coockies</li>
+          <li>Morango</li>
+          <li>Maracujá</li>
+          <li>Kiwi</li>
+          <li>Abacaxi suíço</li>
+          <li>Amendoin</li>
+          <li>Tapioca</li>
         </ul>
       </div>
     </div>
@@ -79,13 +79,13 @@
       <h3 class="titulo-aconpanhamento">Aconpanhamentos</h3>
       <div class="lista-aconpanhamento">
         <ul>
-          <li>LEITE EM PÓ</li>
-          <li>CHOCO BOLL</li>
-          <li>DISQUETE</li>
-          <li>JUJUBA</li>
-          <li>AMENDOIM</li>
-          <li>GRANOLA</li>
-          <li>LEITE CONDENSADO</li>
+          <li>Leite em pó</li>
+          <li>Choco boll</li>
+          <li>Disquete</li>
+          <li>Jujuba</li>
+          <li>Amendoin</li>
+          <li>Granola</li>
+          <li>Leite condensado</li>
         </ul>
       </div>
       <div class="insta">
@@ -140,44 +140,27 @@
         <button class="fechar"> x </button>
       </div>
     </div>
-    <div class="separador-tabela">
-      <main class="tabelas-total">
-        <div class="product">
-          <img src="img/acai.jpg" alt="Açaí">
-          <h2 id="500" class="titulo-tabela">500ml</h2>
-          <p>R$ 16,00</p>
-          <button class="button quicar">Comprar</button>
+    <div class="tela ativa" id="tela1">
+      <h2 class="titulo-quantidade">Digite a quantidade de açaís</h2>
+      <div class="area-quantidade">
+        <div class="borda-pedirq">
+          <input class="pedir-quantidade" type="number" id="quantidadeInput" min="1" max="10" placeholder="Ex: 2">
         </div>
-      </main>
-      <main class="tabelas-total">
-        <div class="product">
-          <img src="img/acai.jpg" alt="Açaí">
-          <h2 id="400" class="titulo-tabela">400ml</h2>
-          <p>R$ 12,00</p>
-          <button class="button quicar">Comprar</button>
+        <div class="borda-botao-avancar">
+          <button class="avancar-tela" onclick="avançarTela()">Avançar</button>
         </div>
-      </main>
-    </div>
-    <div class="separador-tabela">
-      <main class="tabelas-total">
-        <div class="product">
-          <img src="img/acai.jpg" alt="Açaí">
-          <h2 id="300" class="titulo-tabela">300ml</h2>
-          <p>R$ 9,00</p>
-          <button class="button quicar">Comprar</button>
-        </div>
-      </main>
-      <main class="tabelas-total">
-        <div class="product">
-          <img src="img/acai.jpg" alt="Açaí">
-          <h2 id="200" class="titulo-tabela">200ml</h2>
-          <p>R$ 7,00</p>
-          <button class="button quicar">Comprar</button>
-        </div>
-      </main>
+      </div>
     </div>
     
+    <!-- Container para telas de cada açaí -->
+    <div id="telasAçaiContainer"></div>
     
+    <!-- Botões de voltar e finalizar -->
+    <div class="finalizar" id="finalizarDiv">
+      <div class="caixa-finalizar">
+        <button class="b-f" onclick="finalizarPedido()">Finalizar</button>
+      </div>
+    </div>
   </div>
   
   <script src="scripts.js"></script>
